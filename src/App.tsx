@@ -9,6 +9,7 @@ import AboutPage from './pages/AboutPage/AboutPage';
 import useKonamiCode from './hooks/useKonamiCode';
 import KonamiPopup from './components/Popups/KonamiPopup/KonamiPopup';
 import Footer from './components/Footer/Footer';
+import TimelinePage from './pages/TimelinePage/TimelinePage';
 
 const MainContent: React.FC = () => {
   return (
@@ -16,7 +17,7 @@ const MainContent: React.FC = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
-        {/* <Route path="/timeline" element={<TimelinePage />} /> */}
+        <Route path="/timeline" element={<TimelinePage />} />
       </Routes>
     </main>
   );
